@@ -313,7 +313,7 @@ md""" ### $\cdot$ Matriz diagonal
 
 Una matriz diagonal es una matriz cuadrada en la que todos los elementos fuera de la diagonal principal son cero. La diagonal principal es la secuencia de elementos que va desde la esquina superior izquierda hasta la esquina inferior derecha de la matriz. Es decir, una matriz cuadrada $A$ de orden $n \times n$ es diagonal si: $a_{ij} = 0$ para $i \neq j$. Así, una matriz diagonal tiene la siguiente forma:
 
-$\begin{bmatrix}  a_{11} & 0 & \cdots & 0 \\  0 & a_{22} & \cdots & 0 \\  \vdots & \vdots & \ddots & \vdots \\  0 & 0 & \cdots & a_{nn} \end{bmatrix}$
+$\begin{bmatrix}  a_{11} & 0 & \cdots & 0 \\  0 & a_{22} & \cdots & 0 \\  \vdots & \vdots & \ddots & \vdots \\  0 & 0 & \cdots & a_{nn} \end{bmatrix}.$
 
 Ejemplo: A continuación se muestra una matriz diagonal de tamaño $4\times 4$"""
 
@@ -1034,7 +1034,7 @@ version = "17.4.0+2"
 # ╟─12687339-e12d-41c4-8253-4fd780682e7f
 # ╟─914f8485-7f5b-4145-b553-8da9c1eda89f
 # ╠═06003fa7-8a62-4f5e-bf16-8e9d167193a6
-# ╟─446244b7-5043-4928-b82e-de2ee7fc95a1
+# ╠═446244b7-5043-4928-b82e-de2ee7fc95a1
 # ╠═18a3a569-8afc-4d7c-9a3b-126e436d5295
 # ╟─755968e9-e37c-49f5-a9cd-3b697f4a7870
 # ╟─043bae1d-788a-427f-ac5b-7bc61672ce47
