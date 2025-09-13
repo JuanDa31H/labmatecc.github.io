@@ -74,7 +74,7 @@ $D=\begin{bmatrix} 1 & 2 & 3 & 4 \\ -1 & 4 & 1 & 4 \\ 0 & 0 & 1 & -2 \end{bmatri
 D=[1 2 3 4; -1 4 1 4; 0 0 1 -2] #Construimos la matriz
 
 # ╔═╡ a1852040-890c-4ec4-9a54-835b1cf9c257
-md"""El elemento $d_{34}$ de la anterior matriz es el siguiente
+md"""El elemento $d_{34}$ de la anterior matriz es el siguiente:
 
 $\begin{bmatrix} 1 & 2 & 3 & 4 \\ -1 & 4 & 1 & 4 \\ 0 & 0 & 1 & \textcolor{red}{-2} \end{bmatrix}.$ Y lo podemos hallar de la siguiente forma:"""
 
@@ -84,16 +84,16 @@ D[3,4] #Se busca el elemento en la fila 3 y columna 4
 # ╔═╡ 16af7a1d-9aef-428c-adac-fd724d552b01
 md"""El elemento $d_{13}$ 
 
-$\begin{bmatrix} 1 & 2 & \textcolor{red}{3} & 4 \\ -1 & 4 & 1 & 4 \\ 0 & 0 & 1 & -2 \end{bmatrix}$
-es el que se muestra a continuación"""
+$\begin{bmatrix} 1 & 2 & \textcolor{red}{3} & 4 \\ -1 & 4 & 1 & 4 \\ 0 & 0 & 1 & -2 \end{bmatrix},$
+es el que se muestra a continuación:"""
 
 # ╔═╡ c2e55f5a-0b58-4ccf-b29e-03c47bcd90a9
 D[1,3] #Se busca el elemento en la fila 1 y columna 3
 
 # ╔═╡ d002116c-dc11-4333-bdba-7de5429c055c
-md"""La segunda columna de D 
+md"""La segunda columna de la matriz $D$, 
 
-$\begin{bmatrix} 1 & \textcolor{red}{2} & 3 & 4 \\ -1 & \textcolor{red}{4} & 1 & 4 \\ 0 & \textcolor{red}{0} & 1 & -2 \end{bmatrix}$
+$\begin{bmatrix} 1 & \textcolor{red}{2} & 3 & 4 \\ -1 & \textcolor{red}{4} & 1 & 4 \\ 0 & \textcolor{red}{0} & 1 & -2 \end{bmatrix},$
 se puede visualizar con el siguiente comando:"""
 
 # ╔═╡ b1478f42-2b47-425a-9e7a-f5f55bf3cdff
@@ -102,8 +102,8 @@ D[:,2] #Muestra la segunda columna
 # ╔═╡ 4caa7c9d-a185-4403-aa17-960e5cba8b07
 md"""Al igual que la tercera fila de la matriz,
 
-$\begin{bmatrix} 1 & 2 & 3 & 4 \\ -1 & 4 & 1 & 4 \\ \textcolor{red}{0} & \textcolor{red}{0} & \textcolor{red}{1} & \textcolor{red}{-2} \end{bmatrix}$
-se puede mostrar de la siguiente manera"""
+$\begin{bmatrix} 1 & 2 & 3 & 4 \\ -1 & 4 & 1 & 4 \\ \textcolor{red}{0} & \textcolor{red}{0} & \textcolor{red}{1} & \textcolor{red}{-2} \end{bmatrix},$
+se puede mostrar de la siguiente manera:"""
 
 # ╔═╡ aeec8449-dfc8-4559-a811-130e553f716c
 D[3,:] #Muestra la tercera fila
@@ -120,9 +120,11 @@ tal como se sigue.
 D[2:3,1:3]
 
 # ╔═╡ 12e6f5fb-7a0a-44b0-9ed8-4e7e00e34283
-md"""Mostremos ahora desde la fila 1 a la 2 y desde la columna 3 a la 4 de la matriz $D$
+md"""Mostremos ahora desde la fila 1 a la 2 y desde la columna 3 a la 4 de la matriz $D$,
 
-$\begin{bmatrix} 1 & 2 & \textcolor{red}{3} & \textcolor{red}{4} \\ -1 & 4 & \textcolor{red}{1} & \textcolor{red}{4} \\ 0 & 0 & 1 & -2 \end{bmatrix}.$"""
+$\begin{bmatrix} 1 & 2 & \textcolor{red}{3} & \textcolor{red}{4} \\ -1 & 4 & \textcolor{red}{1} & \textcolor{red}{4} \\ 0 & 0 & 1 & -2 \end{bmatrix}.$
+
+Esto se visuliza a continuación:"""
 
 # ╔═╡ 59ff5012-241b-404a-96b9-6e27a7b29c0b
 D[1:2,3:4]
@@ -167,7 +169,7 @@ D₁=vcat(D[1:1, :], D[3:end, :]) #Elimina la fila 2
 M₂₄=hcat(D₁[:, 1:3]) #Del resultado anterior se elimina la columna 4
 
 # ╔═╡ 01bc6da9-91c3-44d8-bdf5-007c850fddad
-md"""Ahora hallemos el menor $M_{22}$ de la matriz $D$
+md"""Ahora hallemos el menor $M_{22}$ de la matriz $D$,
 
 $\begin{bmatrix} 1 & \textcolor{red}{2} & 3 & 4 \\ \textcolor{red}{-1} & \textcolor{red}{4} & \textcolor{red}{1} & \textcolor{red}{4} \\ 0 & \textcolor{red}{0} & 1 & -2 \end{bmatrix}.$
 
@@ -188,7 +190,7 @@ function Menor(Matriz,i,j)
 end
 
 # ╔═╡ 76d160d9-2582-454a-bde1-0fadfeab85c2
-md"""Con nuestra nueva función calculemos nuevamente $M_{22}$ para la matriz $D$"""
+md"""Con nuestra nueva función calculemos nuevamente $M_{22}$ para la matriz $D$."""
 
 # ╔═╡ 56b90154-3a83-4cd9-9a98-08aa87d5e9ab
 Menor(D,2,2)
@@ -206,11 +208,11 @@ Una matriz por bloques generalmente se representa de la siguiente manera:
 
 $A = \begin{bmatrix} A_{11} & A_{12} & \cdots & A_{1k} \\ A_{21} & A_{22} & \cdots & A_{2k} \\ \vdots & \vdots & \ddots & \vdots \\ A_{k1} & A_{k2} & \cdots & A_{kk} \end{bmatrix}$
 
-Donde cada $A_{ij}$ es un bloque que puede ser una submatriz rectangular o incluso otra matriz por bloques.
+donde cada $A_{ij}$ es un bloque que puede ser una submatriz rectangular o incluso otra matriz por bloques.
 
 Veamos ahora un ejemplo de esto. Consideremos  
 
-$E = \begin{bmatrix} E_{11} & E_{12} \\ E_{21} & E_{22} \end{bmatrix}$
+$E = \begin{bmatrix} E_{11} & E_{12} \\ E_{21} & E_{22} \end{bmatrix}.$
 
 Donde:
 
@@ -255,7 +257,7 @@ md"""Y si tratamos de usar alguna de estas variables, Julia nos dirá que no est
 local₁
 
 # ╔═╡ 8c30e76d-9d8d-4408-b92f-2a1041942471
-md"""A diferencia de $\texttt{let}$, las variables definidas en un bloque $\texttt{begin}$ son visibles fuera del bloque. Por ejemplo, consideremos las siguientes variables"""
+md"""A diferencia de $\texttt{let}$, las variables definidas en un bloque $\texttt{begin}$ son visibles fuera del bloque. Por ejemplo, consideremos las siguientes variables:"""
 
 # ╔═╡ f0dbe476-7ea9-4a63-9023-0afffce31870
 begin
@@ -315,7 +317,7 @@ Una matriz diagonal es una matriz cuadrada en la que todos los elementos fuera d
 
 $\begin{bmatrix}  a_{11} & 0 & \cdots & 0 \\  0 & a_{22} & \cdots & 0 \\  \vdots & \vdots & \ddots & \vdots \\  0 & 0 & \cdots & a_{nn} \end{bmatrix}.$
 
-Ejemplo: A continuación se muestra una matriz diagonal de tamaño $4\times 4$"""
+Ejemplo: A continuación se muestra una matriz diagonal de tamaño $4\times 4$."""
 
 # ╔═╡ 18a3a569-8afc-4d7c-9a3b-126e436d5295
 begin
@@ -372,13 +374,13 @@ md""" ### $\cdot$ Suma de matrices
 
 Dadas dos matrices $A$ y $B$ del mismo tamaño $( m \times n )$, la suma $C = A + B$ es otra matriz $m \times n$ donde cada elemento $c_{ij}$ se obtiene sumando los elementos correspondientes de $a_{ij}$ y $b_{ij}$: $c_{ij} = a_{ij} + b_{ij}$. De la siguiente forma
 
-$\begin{align}A+B &= \begin{bmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{bmatrix}+\begin{bmatrix} b_{11} & b_{12} & \cdots & b_{1n} \\ b_{21} & b_{22} & \cdots & b_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ b_{m1} & b_{m2} & \cdots & b_{mn} \end{bmatrix}\\
+$\begin{align}A+B &= \begin{bmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{bmatrix}+\begin{bmatrix} b_{11} & b_{12} & \cdots & b_{1n} \\ b_{21} & b_{22} & \cdots & b_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ b_{m1} & b_{m2} & \cdots & b_{mn} \end{bmatrix}\\\\
 
-&= \begin{bmatrix} a_{11}+b_{11} & a_{12}+b_{12} & \cdots & a_{1n}+b_{1n} \\ a_{21}+b_{21} & a_{22}+b_{22} & \cdots & a_{2b}+b_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1}+b_{m1} & a_{m2}+b_{m2} & \cdots & a_{mn}+b_{mn} \end{bmatrix}\\
+&= \begin{bmatrix} a_{11}+b_{11} & a_{12}+b_{12} & \cdots & a_{1n}+b_{1n} \\ a_{21}+b_{21} & a_{22}+b_{22} & \cdots & a_{2b}+b_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1}+b_{m1} & a_{m2}+b_{m2} & \cdots & a_{mn}+b_{mn} \end{bmatrix}\\\\
 
-&=\begin{bmatrix} c_{11} & c_{12} & \cdots & c_{1n} \\ c_{21} & c_{22} & \cdots & c_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ c_{m1} & c_{m2} & \cdots & c_{mn} \end{bmatrix}\\
+&=\begin{bmatrix} c_{11} & c_{12} & \cdots & c_{1n} \\ c_{21} & c_{22} & \cdots & c_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ c_{m1} & c_{m2} & \cdots & c_{mn} \end{bmatrix}\\\\
 
-&=C\end{align}$"""
+&=C.\end{align}$"""
 
 # ╔═╡ 79acaf98-9774-4e59-8309-5ad204653255
 md"""Ejemplo: 
@@ -407,13 +409,13 @@ A₈-B₈ #resta
 # ╔═╡ da0b3214-9d7d-4b2a-9d18-980ba142d5d8
 md""" ### $\cdot$ Multiplicación por un escalar
 
-Dada una matriz $A$ de tamaño $m \times n$ y un escalar $k$, la multiplicación por escalar $B = k \cdot A$ es otra matriz $m \times n$ donde cada elemento $b_{ij}$se obtiene multiplicando $a_{ij}$ por $k$: $b_{ij} = k \cdot a_{ij}$. Tal como se muestra a continuación:
+Dada una matriz $A$ de tamaño $m \times n$ y un escalar $k$, la multiplicación por escalar $B = k \cdot A$ es otra matriz $m \times n$ donde cada elemento $b_{ij}$ se obtiene multiplicando $a_{ij}$ por $k$: $b_{ij} = k \cdot a_{ij}$. Tal como se muestra a continuación:
 
-$\begin{align}B&=k\cdot A \\
+$\begin{align}B&=k\cdot A \\\\
 
-&= k\cdot \begin{bmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{bmatrix}\\
+&= k\cdot \begin{bmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{bmatrix}\\\\
 
-&= \begin{bmatrix} k\cdot a_{11} &k\cdot a_{12} & \cdots &k\cdot a_{1n} \\ k\cdot a_{21} &k\cdot a_{22} & \cdots &k\cdot a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\k\cdot a_{m1} &k\cdot a_{m2} & \cdots &k\cdot a_{mn} \end{bmatrix}\end{align}$"""
+&= \begin{bmatrix} k\cdot a_{11} &k\cdot a_{12} & \cdots &k\cdot a_{1n} \\ k\cdot a_{21} &k\cdot a_{22} & \cdots &k\cdot a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\k\cdot a_{m1} &k\cdot a_{m2} & \cdots &k\cdot a_{mn} \end{bmatrix}.\end{align}$"""
 
 # ╔═╡ 644ba732-24e1-4156-9c22-0dd3790b30e9
 md"""Ejemplo: 
@@ -439,7 +441,7 @@ a_{11} & a_{12} & \ldots & a_{1n} \\
 a_{21} & a_{22} & \ldots & a_{2n} \\
 \vdots & \vdots & \ddots & \vdots \\
 a_{m1} & a_{m2} & \ldots & a_{mn}
-\end{bmatrix}, \text{ y   } v =
+\end{bmatrix}, \quad \text{y} \quad v =
 \begin{bmatrix}
 v_1 \\
 v_2 \\
@@ -459,7 +461,7 @@ v_1 \\
 v_2 \\
 \vdots \\
 v_n
-\end{bmatrix}\\
+\end{bmatrix}\\\\
 
 &=\begin{bmatrix}
 a_{11}v_1 + a_{12}v_2 + \ldots + a_{1n}v_n \\
@@ -495,23 +497,24 @@ b_{11} & b_{12} & \ldots & b_{1n} \\
 b_{21} & b_{22} & \ldots & b_{2n} \\
 \vdots & \vdots & \ddots & \vdots \\
 b_{p1} & b_{p2} & \ldots & b_{pn}
-\end{bmatrix}\\
+\end{bmatrix}\\\\
 
-&= \begin{bmatrix}
-a_{11} \cdot b_{11} + a_{12} \cdot b_{21} + \ldots + a_{1p} \cdot b_{p1} & \ldots & a_{i1} \cdot b_{1n} + a_{12} \cdot b_{2n} + \ldots + a_{1p} \cdot b_{pn} \\
+&=
+\small \begin{bmatrix}
+a_{11} \cdot b_{11} + a_{12} \cdot b_{21} + \ldots + a_{1p} \cdot b_{p1} & \ldots & a_{11} \cdot b_{1n} + a_{12} \cdot b_{2n} + \ldots + a_{1p} \cdot b_{pn} \\
 a_{21} \cdot b_{11} + a_{22} \cdot b_{21} + \ldots + a_{2p} \cdot b_{p1} & \ldots & a_{21} \cdot b_{1n} + a_{22} \cdot b_{2n} + \ldots + a_{2p} \cdot b_{pn} \\
 \vdots & \ddots & \vdots \\
 a_{m1} \cdot b_{11} + a_{m2} \cdot b_{21} + \ldots + a_{mp} \cdot b_{p1} & \ldots & a_{m1} \cdot b_{1n} + a_{m2} \cdot b_{2n} + \ldots + a_{mp} \cdot b_{pn}
-\end{bmatrix}\\
+\end{bmatrix} \\\\
 
 &=\begin{bmatrix}
 c_{11} & c_{12} & \ldots & c_{1n} \\
 c_{21} & c_{22} & \ldots & c_{2n} \\
 \vdots & \vdots & \ddots & \vdots \\
 c_{m1} & c_{m2} & \ldots & c_{mn}
-\end{bmatrix}\\
+\end{bmatrix}\\\\
 
-&=C\end{align}$
+&=C.\end{align}$
 
 Ejemplo: 
 
@@ -572,7 +575,7 @@ Sea $A = \begin{bmatrix}
 \end{bmatrix}, B=\begin{bmatrix}
 5 & 6 \\
 7 & 8
-\end{bmatrix}$, entonces el producto de Kronecker $A \otimes B$ es el siguiente
+\end{bmatrix}$, entonces el producto de Kronecker $A \otimes B$ es el siguiente:
 
 $A \otimes B = \begin{bmatrix}
 1 \cdot\begin{bmatrix}
@@ -598,7 +601,7 @@ $A \otimes B = \begin{bmatrix}
  21 & 24 & 28 & 32\end{bmatrix}.$"""
 
 # ╔═╡ a1ffd274-0fe6-4fc8-98a0-f1908e3763c9
-md"""Esto se puede realizar con la función $\texttt{kron}$, primero definimos las matrices $A$ y $B$"""
+md"""Esto se puede realizar con la función $\texttt{kron}$, primero definimos las matrices $A$ y $B$:"""
 
 # ╔═╡ 33b0243a-64b4-4a2f-bcdf-d19dcf32671d
 begin
@@ -648,10 +651,10 @@ md""" ### $\cdot$ Transpuesta de una matriz
 
 Dada una matriz $A$ de tamaño $m \times n$, la transpuesta $A^T$ es otra matriz $n \times m$ donde cada elemento $(A^T)_{ij}$ es igual al elemento $a_{ji}$: $(A^T)_{ij} = a_{ji}$. Es decir, si
 
-$A=\begin{bmatrix}  a_{11} & a_{12} & \cdots & a_{1n} \\  a_{21} & a_{22} & \cdots & a_{2n} \\  \vdots & \vdots & \ddots & \vdots \\  a_{m1} & a_{m2} & \cdots & a_{mn} \end{bmatrix}$
+$A=\begin{bmatrix}  a_{11} & a_{12} & \cdots & a_{1n} \\  a_{21} & a_{22} & \cdots & a_{2n} \\  \vdots & \vdots & \ddots & \vdots \\  a_{m1} & a_{m2} & \cdots & a_{mn} \end{bmatrix},$
 entonces 
 
-$A^T=\begin{bmatrix}  a_{11} & a_{21} & \cdots & a_{m1} \\  a_{12} & a_{22} & \cdots & a_{m2} \\  \vdots & \vdots & \ddots & \vdots \\  a_{1n} & a_{2n} & \cdots & a_{mn} \end{bmatrix}$
+$A^T=\begin{bmatrix}  a_{11} & a_{21} & \cdots & a_{m1} \\  a_{12} & a_{22} & \cdots & a_{m2} \\  \vdots & \vdots & \ddots & \vdots \\  a_{1n} & a_{2n} & \cdots & a_{mn} \end{bmatrix}.$
 
 Ejemplo: Considere la siguiente matriz de tamaño $2\times 2$."""
 
@@ -1028,18 +1031,18 @@ version = "17.4.0+2"
 # ╟─f450c7d8-29e0-47dd-9516-49306bf54450
 # ╠═8afc9c45-0681-479e-b3f4-75dac7461d15
 # ╟─d78ccec4-a9df-44e6-a709-3bf9e3baa55e
-# ╠═6f4c7a27-1071-4979-9b6a-9eac50950e64
+# ╟─6f4c7a27-1071-4979-9b6a-9eac50950e64
 # ╠═80550e96-8f59-4429-9dc6-b93f7b4706db
 # ╟─cff445ca-7554-47ee-b410-fbec0b552a7e
 # ╟─12687339-e12d-41c4-8253-4fd780682e7f
 # ╟─914f8485-7f5b-4145-b553-8da9c1eda89f
 # ╠═06003fa7-8a62-4f5e-bf16-8e9d167193a6
-# ╠═446244b7-5043-4928-b82e-de2ee7fc95a1
+# ╟─446244b7-5043-4928-b82e-de2ee7fc95a1
 # ╠═18a3a569-8afc-4d7c-9a3b-126e436d5295
 # ╟─755968e9-e37c-49f5-a9cd-3b697f4a7870
 # ╟─043bae1d-788a-427f-ac5b-7bc61672ce47
 # ╠═b65e75d7-fba8-4648-9726-5be5f1b776af
-# ╠═71823790-277a-4ef2-9e32-ca5e681b23e3
+# ╟─71823790-277a-4ef2-9e32-ca5e681b23e3
 # ╟─f611499c-45c2-4e43-9995-5c1a86580d7b
 # ╟─6b5dd9a6-b989-40f6-98d4-3f9bb95489c2
 # ╠═4056d2ed-2039-46aa-940b-b2fb120033df
