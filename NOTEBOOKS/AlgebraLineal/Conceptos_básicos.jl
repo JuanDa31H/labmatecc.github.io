@@ -413,7 +413,7 @@ Dada una matriz $A$ de tamaño $m \times n$ y un escalar $k$, la multiplicación
 
 $\begin{align}B&=k\cdot A \\\\
 
-&= k\cdot \begin{bmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{bmatrix}\\\\
+&= k\cdot \begin{bmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{bmatrix},\\\\
 
 &= \begin{bmatrix} k\cdot a_{11} &k\cdot a_{12} & \cdots &k\cdot a_{1n} \\ k\cdot a_{21} &k\cdot a_{22} & \cdots &k\cdot a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\k\cdot a_{m1} &k\cdot a_{m2} & \cdots &k\cdot a_{mn} \end{bmatrix}.\end{align}$"""
 
@@ -1001,7 +1001,7 @@ version = "17.4.0+2"
 # ╠═59ff5012-241b-404a-96b9-6e27a7b29c0b
 # ╟─ad5ac9be-de8a-4e36-8719-07f271293384
 # ╠═5176dfb0-ca55-4c3b-9758-25da336a1068
-# ╠═134e30fc-65f6-4869-9e61-f946a5c1a4b3
+# ╟─134e30fc-65f6-4869-9e61-f946a5c1a4b3
 # ╠═d7a30d33-921c-477c-bc03-54600fa4aae3
 # ╟─305c334a-d343-45ea-83e4-99375d014c48
 # ╠═0a644a7b-3bbc-4736-98d6-c5246e505332
