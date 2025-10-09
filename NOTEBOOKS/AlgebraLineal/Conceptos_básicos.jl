@@ -212,9 +212,9 @@ donde cada $A_{ij}$ es un bloque que puede ser una submatriz rectangular o inclu
 
 Veamos ahora un ejemplo de esto. Consideremos  
 
-$E = \begin{bmatrix} E_{11} & E_{12} \\ E_{21} & E_{22} \end{bmatrix}.$
+$E = \begin{bmatrix} E_{11} & E_{12} \\ E_{21} & E_{22} \end{bmatrix}$
 
-Donde:
+donde:
 
 $E_{11} = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}, \quad
 E_{12} = \begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix},$
